@@ -6,12 +6,12 @@
 
 class Div : public ASTNode {
   public:
-    Div(ASTNode *lhs, ASTNode *rhs)
+   inline Div(ASTNode *lhs, ASTNode *rhs)
         : ASTNode( "/", lhs, rhs)
         ,m_lhs(lhs)
         ,m_rhs(rhs)
          {}
-
+  
   private:
 
     ASTNode *m_lhs;

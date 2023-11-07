@@ -6,8 +6,7 @@
 
 class Add : public ASTNode {
   public:
-    Add(ASTNode *lhs, ASTNode *rhs)
+    inline Add(ASTNode *lhs, ASTNode *rhs)
         : ASTNode( "+", lhs, rhs)
          {}
-
 };

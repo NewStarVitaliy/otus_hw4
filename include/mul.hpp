@@ -6,7 +6,7 @@
 
 class Mul : public ASTNode {
   public:
-    Mul(ASTNode *lhs, ASTNode *rhs)
+    inline Mul(ASTNode *lhs, ASTNode *rhs)
         : ASTNode( "*", lhs, rhs)
          {}
 

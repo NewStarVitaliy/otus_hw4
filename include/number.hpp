@@ -6,7 +6,7 @@
 
 class Number : public ASTNode {
   public:
-    Number(int val)
+    inline Number(int val)
         : ASTNode(std::to_string(val))
         , val_(val) {}
 

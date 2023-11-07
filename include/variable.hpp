@@ -6,7 +6,7 @@
 
 class Variable : public ASTNode {
   public:
-    Variable(std::string val)
+    inline Variable(std::string val)
         : ASTNode(val) {}
 
     //int value() const { return val_;

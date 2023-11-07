@@ -6,7 +6,7 @@
 
 class Sub : public ASTNode {
   public:
-    Sub(ASTNode *lhs, ASTNode *rhs)
+    inline Sub(ASTNode *lhs, ASTNode *rhs)
         : ASTNode( "-", lhs, rhs)
          {}
 
